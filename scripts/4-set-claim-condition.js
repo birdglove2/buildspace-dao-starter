@@ -1,9 +1,7 @@
 import sdk from './1-initialize-sdk.js';
 import { MaxUint256 } from '@ethersproject/constants';
-import dotenv from 'dotenv';
-dotenv.config();
 
-const editionDrop = sdk.getEditionDrop(process.env.EDITION_DROP_ADDRESS);
+const editionDrop = sdk.getEditionDrop('0x54370BF2e0747138864A03E3B201096C233ade54');
 
 (async () => {
   try {
